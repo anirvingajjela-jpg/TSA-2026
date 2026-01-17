@@ -1,0 +1,240 @@
+* {
+    transition: 0.25s all;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+nav ul#navbar-items {
+    list-style: none;
+    display: flex;
+}
+
+nav ul#navbar-items li {
+    margin: 0 15px;
+}
+
+#navbar-items li {
+    height: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#first-section {
+    background: #ecf0f1;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
+
+#first-section #resource-information {
+    background-color: white;
+    height: 300px;
+    padding: 3rem 5%;
+    width: 30%;
+    position: absolute;
+    z-index: 10;
+}
+
+#RESOURCE-NAME {
+    margin: 10px 0;
+}
+
+#PERSON-IMG {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+#person-label {
+    display: flex;
+    align-items: center;
+}
+
+#person-label img {
+    margin-right: 5px;
+}
+
+#person-label * {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+}
+
+#RESOURCE-DESCRIPTION {
+    font-size: 14px;
+}
+
+section {
+    padding: 3rem 10%;
+}
+
+.categories-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.categories-nav button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.categories-nav button:hover {
+    background: #2980b9;
+}
+
+.event-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-left: 5px solid #3498db;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background: #2c3e50;
+    color: white;
+}
+
+.filtered-event {
+    width: calc(50% - 20px);
+    aspect-ratio: 3 / 2;
+    background-color: #F9F9F9;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.caption {
+    width: 100%;
+    aspect-ratio: 3 / calc(3 / 5);
+    background-color: hsl(204, 70%, 53%);
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    align-content: center;
+    font-weight: 500;
+}
+
+.caption a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.caption:hover {
+    background-color: hsl(204, 70%, 43%);
+    width: 101%;
+    transform: translate(-0.5%, 0.5%);
+}
+
+.filtered-event .filev-img {
+    width: 100%;
+    aspect-ratio: 3 / calc(7 / 5);
+    object-fit: cover;
+}
+
+#ana {
+    position: absolute;
+    top: 23px;
+    left: 52px;
+    width: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-word;
+    line-height: 0.8;
+    font-size: 8px;
+}
+
+#calypto {
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.img-container {
+    height: 300px;
+    min-width: 40vw;
+    background: rgba(255, 255, 255, 0.15);
+    /* filter: drop-shadow(2px 4px 0.1vh black) blur(0px); */
+    transform: translateX(10vw);
+    border: solid black 2px;
+    position: absolute;
+}
+
+.img-container:has(#RESOURCE-IMAGE) {
+    transform: translateX(44vw);
+}
+
+.img-container img#RESOURCE-IMAGE {
+    filter: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#categories {
+    padding: 3rem 20%;
+}
+
+input#search-bar {
+    width: calc(100% - 12px - 35px);
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+    border-left: 5px solid #3498db;
+}
+
+button#search-btn {
+    width: 25px;
+    aspect-ratio: 1 / 1;
+    background: hsl(204, 70%, 53%);
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 5px;
+    box-sizing: content-box;
+    font-size: 20px;
+    align-content: center;
+}
+
+div#search-bar-container {
+    align-items: center;
+    display: flex;
+}

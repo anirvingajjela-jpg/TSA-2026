@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Wilmington | anaCalypto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/tsa2026/">
+                <h5 id="ana">ana</h5>
+                <h1 id="calypto">Calypto</h1>
+            </a>
+            <ul id="navbar-items">
+                <li><a href="/tsa2026/browse/">Browse</a></li>
+                <li><a href="#tags">Categories</a></li>
+                <li><a href="/tsa2026/resource/?random">Random</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="first-section">
+        <div class="first-section-content">
+            <h2>Our Purpose</h2>
+            <p>We are here to discover and share resources, services, and events in Wilmington, and through this to
+                bring people together.</p>
+        </div>
+    </section>
+
+
+    <section id="categories">
+        <h3 id="tags">Tags</h3>
+        <div class="categories-container">
+            <div class="categories-nav">
+                <button onclick="filterResourcesByTag('event', true)">Events</button>
+                <button onclick="filterResourcesByTag('service', true)">Services</button>
+                <button onclick="filterResourcesByTag('educational', true)">Educational</button>
+                <button onclick="filterResourcesByTag('startup', true)">Startups</button>
+            </div>
+            <div id="event-container" class="event-container">
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption"><a href="">Temporary Text</a></div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption"><a href="">Temporary Text</a></div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption"><a href="">Temporary Text</a></div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption"><a href="">Temporary Text</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TSA State Conference Entry | Odyssey Charter School Chapter</p>
+    </footer>
+
+    <script src="/tsa2026/main.js"></script>
+
+    <script src="/tsa2026/fetchJSON.js"></script>
+
+</body>
+
+</html>
